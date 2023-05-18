@@ -19,3 +19,13 @@ Below are the commands required for installing Artery V2X Framework in Ubuntu 22
 | `sudo apt install default-jre` | Install Java |
 
 
+---
+Video: Creating a Custom Simulation Setup in Artery V2X Framework
+
+| Command | Description |
+| ------------- | ------------- |
+|`add_subdirectory(junction)` | To add project in the CMakeLists.txt file in scenarios folder |
+|`projParameter="+proj=utm +zone=22 +ellps=WGS84 +datum=WGS84 +units=m +no_defs”` | Latitude/Longitude Error |
+| `cmake ..`| To Run CMake |
+| `cmake --build .` | To build a Project |
+| `cmake --build build --target run_junction` | Run the Project Junction|
